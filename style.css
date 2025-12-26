@@ -143,3 +143,28 @@ footer a {
   margin-top: 10px;
   font-size: 14px;
 }
+/* ===== Hover Animations ===== */
+.card h1, .card p, .card li, .cta-btn {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.card h1:hover {
+  color: #2ecc71;
+  transform: scale(1.05);
+}
+
+.card p:hover {
+  color: #27ae60;
+  transform: scale(1.02);
+}
+
+.card li:hover {
+  color: #27ae60;
+  transform: translateX(5px);
+}
+
+.cta-btn:hover {
+  background: #2ecc71;
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}

@@ -99,3 +99,47 @@ footer a {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
 }
+/* ===== TIMER & REVIEWS ===== */
+
+.timer-box {
+  background: #f1fff7;
+  color: #27ae60;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+#timer {
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+.rating {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #f1c40f;
+}
+
+.rating span {
+  color: #555;
+  font-size: 13px;
+}
+
+.reviews {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.reviews h3 {
+  text-align: center;
+  color: #27ae60;
+}
+
+.review {
+  background: #f8f8f8;
+  padding: 12px;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+}

